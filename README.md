@@ -1,9 +1,35 @@
 # BLURT REST API
 
-* https://api.blurt.buzz/getState?path=/trending
-* https://api.blurt.buzz/getConfig
-* https://api.blurt.buzz/getAccounts?names[]=ericet
+## Get trending/hot/created/feed/blog
+* https://api.blurt.buzz/api/getState?path=/trending
+* https://api.blurt.buzz/api/getState?path=/hot
+* https://api.blurt.buzz/api/getState?path=/created
+* https://api.blurt.buzz/api/getState?path=/@ericet/feed
+* https://api.blurt.buzz/api/getState?path=/@ericet
 
+
+## Get BLURT Properties
+* https://api.blurt.buzz/api/getConfig
+* https://api.blurt.buzz/api/getDynamicGlobalProperties
+* https://api.blurt.buzz/api/getChainProperties
+
+## Get Accounts Information
+* https://api.blurt.buzz/api/getAccounts?names[]=ericet
+
+## Get Account Posts
+* https://api.blurt.buzz/api/getDiscussionsByBlog?query
+
+## Total BLURT Accounts
+* https://api.blurt.buzz/api/getAccountCount
+
+## Get Account History
+* https://api.blurt.buzz/api/getAccountHistory?account=ericet&from=-1&limit=50
+* https://api.blurt.buzz/api/getState?path=/@ericet/transfers
+
+---
+And so much more...
+
+All the available methods can be find below:
 ~~~
 [
   {
